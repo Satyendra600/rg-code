@@ -8,7 +8,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)\D:\DOWNLOAD\Agent\new'
+    workingDirectory: '$(System.DefaultWorkingDirectory)\D:\DOWNLOAD\Agent\_work\_tool\terraform\1.13.1\x64'
     backendServiceArm: 'Azure-CloudMart-Dev'
     backendAzureRmStorageAccountName: 'gandhistg'
     backendAzureRmContainerName: 'gandhiapp'
