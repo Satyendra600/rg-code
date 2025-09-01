@@ -1,0 +1,15 @@
+trigger: none
+pool: Dev-AgentPool
+steps:
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: 'latest'
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)\D:\DOWNLOAD\Agent\new'
+    backendServiceArm: 'Azure-CloudMart-Dev'
+    backendAzureRmStorageAccountName: 'gandhistg'
+    backendAzureRmContainerName: 'gandhiapp'
+    backendAzureRmKey: 'kuchbhi'
