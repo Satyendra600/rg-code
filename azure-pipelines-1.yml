@@ -8,7 +8,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)\1.13.1\x64'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     backendServiceArm: 'Azure-CloudMart-Dev'
     backendAzureRmStorageAccountName: 'gandhistg'
     backendAzureRmContainerName: 'gandhiapp'
